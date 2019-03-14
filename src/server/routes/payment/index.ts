@@ -29,6 +29,3 @@ router.post("/", async (req, res, next) => {
 });
 
 export default router;
-
-// sandbox44af74c271da46d09ecd5cd2ca9c6f64.mailgun.org
-// key-98106211e809d9b0953e7d2f261a4797

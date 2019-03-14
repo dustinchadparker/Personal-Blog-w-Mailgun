@@ -2,7 +2,6 @@ import * as path from "path";
 import * as express from "express";
 import * as passport from "passport";
 import * as cors from "cors";
-import * as mailgunLoader from 'mailgun-js';
 
 import "./middleware/localstrategy";
 import "./middleware/bearerstrategy";

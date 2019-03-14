@@ -29,7 +29,7 @@ router.post("/mail", async (req, res, next) => {
       "authorizedemail@gmail.com",
       "no-reply@test.com",
       "Hello there",
-      "May the force be with you."
+      req.body.messages
     );
     res.send("Email sent!");
   } catch (e) {
