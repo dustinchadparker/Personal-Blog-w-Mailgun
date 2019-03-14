@@ -7,6 +7,7 @@ import SingleBlog from "./components/public/SingleBlog";
 import Admin from "./components/admin/Admin";
 import Login from "./components/admin/Login";
 import Payment from "./components/public/Payment";
+import Mail from "./components/public/Mail";
 
 export default class App extends React.Component<IAppProps, IAppState> {
   render() {
@@ -20,6 +21,8 @@ export default class App extends React.Component<IAppProps, IAppState> {
             <Route exact path="/admin" component={Admin} />
             <Route exact path="/login" component={Login} />
             <Route exact path="/payment" component={Payment} />
+            <Route exact path="/mail" component={Mail} />
+
           </Switch>
         </>
       </BrowserRouter>

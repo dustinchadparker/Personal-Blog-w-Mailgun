@@ -27,8 +27,8 @@ router.post("/mail", async (req, res, next) => {
   try {
     await sendMail(
       "authorizedemail@gmail.com",
-      "no-reply@test.com",
-      "Hello there",
+      req.body.email,
+      req.body.subject,
       req.body.messages
     );
     res.send("Email sent!");
